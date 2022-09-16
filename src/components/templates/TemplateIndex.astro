@@ -1,0 +1,59 @@
+---
+import Layout from "../organisms/Layout.astro";
+import SectionProduct from "../organisms/SectionProduct.astro";
+const products = [
+  {
+    title: "Nail Art",
+    description:
+      "Nail art is a budding art form on its own and has become a global phenomenon with tv shows and expos taking place regularly.",
+    slug: "nail-art",
+    imageUrl: "/assets/images/section_product/nail-art.jpg",
+  },
+  {
+    title: "Nail Tips",
+    description:
+      "Our technicians go beyond the usual manicures and pedicures that are provided at a typical salon.",
+    slug: "nail-tips",
+    imageUrl: "/assets/images/section_product/nail-tips.jpg",
+  },
+  {
+    title: "Nail Maintenance",
+    description:
+      "This includes cleaning and maintaining the cuticles, trimming and shaping nails, and any necessary care for the skin and nail bed.",
+    slug: "nail-maintenance",
+    imageUrl: "/assets/images/section_product/nail-maintenance.jpg",
+  },
+  {
+    title: "Gel & Shellac Manicure",
+    description:
+      "These manicures cover the entire nail to give the desired color and shape. They create a hard exterior to protect the nail and give a high shine.",
+    slug: "gel-shellac-manicure",
+    imageUrl: "/assets/images/section_product/nail-gel.jpg",
+  },
+  {
+    title: "Acrylic Overlay",
+    description:
+      "Acrylics are a combination of liquid monomer and powder polymer that are adhered to the nail to create a hard protective cover. This process not only protects the nail but builds the desired color, shape, or texture on the nail. These also can become the canvas for creating nail art.",
+    slug: "acrylic-overlay",
+    imageUrl: "/assets/images/section_product/nail-acryllic.jpg",
+  },
+  {
+    title: "Massage, Hot Wax, Oil",
+    description:
+      "Beyond nail polish and art, nail technicians also provide treatments for the overall care of the hands, including skin and nail treatments. Two common services involve using hot wax or oil to moisturize the hands, increase circulation, and improve skin texture and nail condition. Paraffin wax manicures are a great solution for dry and dehydrated skin.",
+    slug: "massage-hot-wax-oil",
+    imageUrl: "/assets/images/section_product/nail-wax.jpg",
+  },
+];
+---
+
+<Layout>
+  <>
+    {
+      products.map((props, i) => {
+        const direction = i & 1 ? "image-left" : "image-right";
+        return <SectionProduct {...props} direction={direction} />;
+      })
+    }
+  </>
+</Layout>

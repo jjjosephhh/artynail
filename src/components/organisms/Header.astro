@@ -1,0 +1,63 @@
+---
+import IconDocument from "../atoms/IconDocument.astro";
+import IconNotice from "../atoms/IconNotice.astro";
+import IconNotification from "../atoms/IconNotification.astro";
+---
+
+<header
+  class="bg-center bg-[url('https://images.unsplash.com/photo-1636019410117-1277a50f9c21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')]"
+>
+  <div class="px-4 py-8 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+    <div class="flex items-center justify-end gap-4">
+      <div class="flex items-center gap-4">
+        <a
+          href=""
+          class="block p-2.5 text-gray-600 bg-white rounded-full hover:text-gray-700 shrink-0 shadow-sm"
+        >
+          <IconNotice />
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a
+          href=""
+          class="block p-2.5 text-gray-600 bg-white rounded-full hover:text-gray-700 shrink-0 shadow-sm"
+        >
+          <IconNotification />
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a
+          href=""
+          class="block p-2.5 text-gray-600 bg-white rounded-full hover:text-gray-700 shrink-0 shadow-sm"
+        >
+          <IconDocument />
+        </a>
+      </div>
+
+      <span aria-hidden="true" class="block w-px h-6 bg-gray-200 rounded-full"
+      ></span>
+
+      <a href="" class="block shrink-0">
+        <img
+          alt="profile"
+          class="object-cover w-10 h-10 rounded-full"
+          src="/assets/images/profile.jpg"
+        />
+      </a>
+    </div>
+
+    <div class="mt-8">
+      <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+        <span class="text-white">Welcome to</span>
+        <span class="text-orange-600">A</span><span class="text-yellow-400"
+          >r</span
+        ><span class="text-lime-500">t</span><span class="text-teal-600">y</span
+        >
+        <span class="text-pink-600">Nail</span>
+      </h1>
+      <p class="mt-1.5 text-sm text-white">
+        Premier nail art at a humble price point
+      </p>
+    </div>
+  </div>
+</header>
